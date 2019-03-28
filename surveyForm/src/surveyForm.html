@@ -1,0 +1,147 @@
+<!Doctype html>
+<html>
+<link rel="worksheet" type="text/html" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+    <style>
+        body {
+            font-family: helvetica;
+            font-size: 18px;
+            text-align: center;
+            background-color: rgb(89, 223, 205);
+        }
+
+        #survey-form {
+            background-color: rgb(243, 243, 243);
+            border-radius: 10px;
+            text-align: center;
+            margin-left: 200px;
+            margin-right: 200px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    
+        #box-1 {
+            text-align: end;
+            align-self: flex-start;
+        }
+        #box-2 {
+            text-align: left;
+        }
+
+        
+    
+        #box-container {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 20px;
+            align-items: stretch;
+        }
+        button {
+            background-color: rgb(39, 39, 238);
+        }
+        button:hover {
+           animation-name: bu;
+           animation-duration: 50ms;
+           animation-fill-mode: forwards;
+        }
+        @keyframes bu {
+            100% {
+                background-color: rgb(106, 106, 255);
+            }
+        }
+
+    </style>
+    <main>
+        <title>Survey Form</title>
+        <body>
+            <h1 id="title">Survey Form</h1>
+            <form id="survey-form">
+                <p id="description">Let us know how we can improve freeCodeCamp</p><br>
+                <div id="box-container">
+                    <div id="box-1">
+                            <label id="name-label">*Name </label><br>      
+                    </div>
+                    <div id="box-2">
+                        <input style="width: 200px; height: 25px;" type="text" id="name" placeholder="Enter your name" value="name" required><br>
+                    </div>
+                    <div id="box-1">
+                            <label id="email-label">*Email </label><br>
+                    </div>
+                    <div id="box-2">
+                            <input style="width: 200px; height: 25px;" type="email" id="email" placeholder="Enter your email" value="email"required><br>
+                    </div>
+                    <div id="box-1">
+                        <label id="number-label">*Age </label><br>
+                    </div>
+                    <div id="box-2">
+                            <input style="width: 200px; height: 25px;" type="number" id="number" min="16" max="100" placeholder="Age" value="number" required><br> 
+                    </div>
+                    <div id="box-1">
+                        <label>Which option best describes your current role? </label><br>
+                    </div>
+                    <div id="box-2">
+                            <select id="dropdown">
+                                    <option disabled selected>Select an option</option>
+                                    <option>Student</option>
+                                    <option>Full Time Job</option>
+                                    <option>Full Time Learner</option>
+                                    <option>Prefer not to say</option>
+                                    <option>Other</option>
+                                </select><br>
+                    </div>
+                    <div id="box-1">
+                        <label>How likely is it tha you would recomend<br> freeCodeCamp to a friend?</label>
+                    </div>
+                    <div id="box-2">
+                        <label>
+                            <input type="radio" name="radio-button" value="Definately"> Definately<br><br>
+                            <input type="radio" name="radio-button" value="Maybe"> Maybe<br><br>
+                            <input type="radio" name="radio-button" value="Not sure"> Not sure<br><br>
+                        </label>
+                    </div>
+                    <div id="box-1">
+                        <label>What do you like most in FFC? </label>
+                    </div>
+                    <div id="box-2">
+                        <select id="dropdown">
+                            <option disabled selected>Select an option</option>
+                            <option>Challenges</option>
+                            <option>Projects</option>
+                            <option>Community</option>
+                            <option>Open Source</option>
+                        </select>
+                    </div>
+                    <div id="box-1">
+                            <label>Things that should be improved in the future<br>(Check all that apply):</label>
+                    </div>
+                    <div id="box-2">
+                        <label>  
+                        <input type="checkbox" value="front-end"> Front-end Projects<br><br>
+                        <input type="checkbox" value="back-end"> Back-end Projects<br><br>
+                        <input type="checkbox" value="data visualisation"> Data Visualization<br><br>
+                        <input type="checkbox" value="challenges"> Challenges<br><br>
+                        <input type="checkbox" value="open source"> Open Source Community<br><br>
+                        <input type="checkbox" value="help rooms"> Gitter help rooms<br><br>
+                        <input type="checkbox" value="videos"> Videos<br><br>
+                        <input type="checkbox" value="city meetups"> City Meetups<br><br>
+                        <input type="checkbox" value="wiki"> Wiki<br><br>
+                        <input type="checkbox" value="forum"> Forum<br><br>
+                        <input type="checkbox" value="additional courses"> Additional Courses<br><br>
+                        </label> 
+
+                    </div>
+
+                    <div id="box-1">
+                        <label>Any Comments or Suggestions? </label><br>
+                    </div>
+                    <div id="box-2">
+                        <textarea style="width: 200px; height: 50px;" placeholder="Enter your comments here.."></textarea>
+                    </div>
+                </div>
+                    <button type="submit" id="submit">Submit</button>
+                
+                
+            </form>
+        </body>
+    </main>
+
+</html>
