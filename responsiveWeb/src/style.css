@@ -266,6 +266,7 @@ header nav ul li a:hover {
     background-position: center;
     background-attachment: fixed;
     background-size: 100% 90%;
+    padding: 100px 0;
 }
 
 .title h2, p {
@@ -376,9 +377,7 @@ header nav ul li a:hover {
 
 }
 
-.area {
-    padding: 100px 0;
-}
+
 .single-feature:nth-last-child(2) {
     border-bottom: none;
 
@@ -475,7 +474,7 @@ header nav ul li a:hover {
     padding-top: 100px;
     padding-bottom: 200px;
     color: white;
-    margin-bottom: 100px;
+
     
 }
 
@@ -502,10 +501,6 @@ header nav ul li a:hover {
     background-color: orange;
 }
 
-
-.our-team {
-    padding-bottom: 100px;
-}
 
 .testimonials #carousel-testimonials {
     margin-top: 100px
@@ -575,10 +570,18 @@ header nav ul li a:hover {
     
     
 }
+.our-team {
+    padding-top: 100px;
+    padding-bottom:100px;
+}
 
 .our-team #jav:hover .team-mem{
     box-shadow: 0px 0px 0px 10px rgb(60, 195, 182);
-
+    -webkit-transition: .8s ease;
+    -moz-transition: .8s ease;
+    -ms-transition: .8s ease;
+    -o-transition: .8s ease;
+    transition: .8s ease;
 }
 
 .our-team #jav:hover p, .our-team #jav:hover span{
@@ -592,6 +595,11 @@ header nav ul li a:hover {
 
 .our-team #jav:hover .description{
     background-color: rgb(60, 195, 182);
+    -webkit-transition: .8s ease;
+    -moz-transition: .8s ease;
+    -ms-transition: .8s ease;
+    -o-transition: .8s ease;
+    transition: .8s ease;
 }
 
 .our-team #jav:hover .social-network i{
@@ -616,7 +624,7 @@ header nav ul li a:hover {
 
 .download-page .btn:hover {
     background-color: white;
-    color: rgb(60, 195, 182)
+    color: rgb(60, 195, 182);
 }
 
 
@@ -634,5 +642,101 @@ header nav ul li a:hover {
 .download-page h2 {
     margin-top: 100px;
 }
+
+.contact-list {
+    list-style: none;
+}
+
+.contact-list li {
+    display: table;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+
+.contact-icon {
+    position: absolute;
+    left: 0;
+}
+
+.contact-icon i {
+    color: orange;
+    text-align: center;
+    font-size: 25px;
+}
+.contact-details {
+    margin-left: 15px;
+}
+
+.contact-us .contact-details p {
+    color: darkgrey;
+
+}
+
+.contact-list h3 {
+    font-weight: 200;
+}
+
+.message {
+    border-left: solid 2px lightgrey;
+    padding-left: 40px; 
+}
+
+.contact-us {
+    padding-top: 100px;
+}
+.message input {
+    margin: 12px;
+    height: 40px;
+    width: 370px;
+    padding-left: 5px;
+    background-color:rgb(218, 236, 234); 
+}
+
+.message h3 {
+    font-weight: 200;
+}
+
+.message textarea {
+    height: 150px;
+    width: 370px;
+    margin-top: 10px;
+    margin-left: -70px;
+    position: absolute;
+    background-color:rgb(218, 236, 234); 
+    
+}
+.message button {
+    position: absolute;
+    width: 370px;
+    margin-left: -70px;
+    margin-top: 180px;
+}
+.message form {
+    display: table-cell;
+
+}
+.map {
+    background-color: black;
+}
+
+
+.falcon-logo {
+    animation-name: logo;
+    animation-duration: 2s;
+    transition: ease-in;
+    
+}
+
+@keyframes logo {
+    0% {
+        transform: translateX(-260px);
+    }
+    
+}
+
+
+
+
 
 

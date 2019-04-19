@@ -1,6 +1,6 @@
 jQuery(document).ready(function () {
     "use strict"
-
+// function used for the carousel slider for intr page
     $('#slid-carousel').carouFredSel({
         responsive: true,
         width: '100%',
@@ -24,6 +24,7 @@ jQuery(document).ready(function () {
         }
 
     });
+    // added effects to the header bar on scroll
     $(Window).scroll(function () {
         var start = $(window).scrollTop();
         if(start >= 60) {
