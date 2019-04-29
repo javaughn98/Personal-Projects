@@ -3,9 +3,13 @@
     padding: 0px
 
 }
+section {
+    margin-right: 0.001%;
+}
 
 body {
     height: 8000px;
+    overflow: none;
 }
 
 .title .sub-head p {
@@ -417,6 +421,7 @@ header nav ul li a:hover {
 }
 .list {
     list-style: none;
+    position: relative;
 }
 
 .list li {
@@ -510,10 +515,10 @@ header nav ul li a:hover {
 
 .team-mem {
     position:absolute;
-    left: 50%;
-    margin-left: -50px;
+    left: 33%;
+   margin-top: 80px;
     top: -50px;
-    overflow: hidden;
+    overflow:hidden;
     min-height: 100px;
     height: 120px;
     width: 120px;
@@ -528,6 +533,7 @@ header nav ul li a:hover {
     background-color: #f7f7f7;
     text-align: center;
     padding: 70px 25px 40px;
+    margin-top: 80px;
     
 
 }
@@ -684,6 +690,7 @@ header nav ul li a:hover {
 
 .contact-us {
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 .message input {
     margin: 12px;
@@ -700,17 +707,17 @@ header nav ul li a:hover {
 .message textarea {
     height: 150px;
     width: 370px;
-    margin-top: 10px;
-    margin-left: -70px;
-    position: absolute;
+    margin: 12px;
+    padding-left: 5px;
+    position: relative;
     background-color:rgb(218, 236, 234); 
     
 }
 .message button {
-    position: absolute;
+    position: relative;
     width: 370px;
-    margin-left: -70px;
-    margin-top: 180px;
+    margin: 12px;
+    
 }
 .message form {
     display: table-cell;
@@ -735,8 +742,30 @@ header nav ul li a:hover {
     
 }
 
+@media screen and (max-width: 850px) {
+    iframe {
+        width: 100%;
+    }
+}
 
 
+@media screen and (max-width: 500px) {
+    .feature-mockup {
+        display: none;
+    }
+    iframe {
+        width: 100%;
+    }
+    .message form {
+        width: 100%;
+    }
+
+    .message {
+        border: none;
+    }
+    
+    
+}
 
 
 
